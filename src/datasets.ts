@@ -1,10 +1,10 @@
-import menAll from "./data/miehet-kaikki.json";
-import menFirst from "./data/miehet-ens.json";
+import menAll from "./data/miehet-kaikki.json" assert { type: "json" };
+import menFirst from "./data/miehet-ens.json" assert { type: "json" };
 
-import womenAll from "./data/naiset-kaikki.json";
-import womenFirst from "./data/naiset-ens.json";
+import womenAll from "./data/naiset-kaikki.json" assert { type: "json" };
+import womenFirst from "./data/naiset-ens.json" assert { type: "json" };
 
-import lastNames from "./data/sukunimet.json";
+import lastNames from "./data/sukunimet.json" assert { type: "json" };
 import { NameData } from "./name";
 
 export type FirstNameOptions = {
