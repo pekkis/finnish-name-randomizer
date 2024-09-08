@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@iv/alea':
+        specifier: npm:@jsr/iv__alea@^1.1.0
+        version: '@jsr/iv__alea@1.1.0'
+      esm-seedrandom:
+        specifier: ^3.0.5
+        version: 3.0.5
       random-seed-weighted-chooser:
         specifier: ^1.1.10
         version: 1.1.10
@@ -334,6 +340,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
+  '@jsr/iv__alea@1.1.0':
+    resolution: {integrity: sha512-pONv57m4zCfAaG7iDBSJOejtL49RLac64X9UjsEJexFPD4osISfeGCY/aYwbdOwR/AQ5EyrT9Dze7U3ScwvS5g==, tarball: https://npm.jsr.io/~/11/@jsr/iv__alea/1.1.0.tgz}
+
   '@rollup/rollup-android-arm-eabi@4.21.2':
     resolution: {integrity: sha512-fSuPrt0ZO8uXeS+xP3b+yYTCBUd05MoSp2N/MFOgjhhUhMmchXlpTQrTpI8T+YAwAQuK7MafsCOxW7VrPMrJcg==}
     cpu: [arm]
@@ -483,6 +492,9 @@ packages:
     resolution: {integrity: sha512-VVNz/9Sa0bs5SELtn3f7qhJCDPCF5oMEl5cO9/SSinpE9hbPVvxbd572HH5AKiP7WD8INO53GgfDDhRjkylHEg==}
     engines: {node: '>=18'}
     hasBin: true
+
+  esm-seedrandom@3.0.5:
+    resolution: {integrity: sha512-pMAq0mFIr5JQ3Ihbng7EBLMJ+llMbaDKkiG44pqbSXS0NIZWtEANpOpxb5s6Q8Q2R562P26qMHPv8YtP/NHh9g==}
 
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
@@ -873,6 +885,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@jsr/iv__alea@1.1.0': {}
+
   '@rollup/rollup-android-arm-eabi@4.21.2':
     optional: true
 
@@ -1040,6 +1054,8 @@ snapshots:
       '@esbuild/win32-arm64': 0.23.1
       '@esbuild/win32-ia32': 0.23.1
       '@esbuild/win32-x64': 0.23.1
+
+  esm-seedrandom@3.0.5: {}
 
   estree-walker@3.0.3:
     dependencies:

@@ -1,9 +1,9 @@
 import { expect, describe, it } from "vitest";
-import { firstname, lastName } from "./index";
+import { randomFirstName, randomLastName } from "./index";
 
 describe("name generator", () => {
   it("returns a female first name", () => {
-    const result = firstname({
+    const result = randomFirstName({
       sex: "female",
       firstNamesOnly: true,
     });
@@ -12,7 +12,7 @@ describe("name generator", () => {
   });
 
   it("returns a male first name", () => {
-    const result = firstname({
+    const result = randomFirstName({
       sex: "male",
       firstNamesOnly: true,
     });
@@ -21,7 +21,7 @@ describe("name generator", () => {
   });
 
   it("returns a last name", () => {
-    const result = lastName();
+    const result = randomLastName();
     expect(result).toBeTypeOf("string");
   });
 });

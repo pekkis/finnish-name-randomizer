@@ -23,6 +23,8 @@
     "vitest": "^2.0.5"
   },
   "dependencies": {
+    "@iv/alea": "npm:@jsr/iv__alea@^1.1.0",
+    "esm-seedrandom": "^3.0.5",
     "random-seed-weighted-chooser": "^1.1.10"
   }
 }

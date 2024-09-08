@@ -11,7 +11,7 @@ const lastNameGenerator = createRandomNameGenerator(getLastnameDataset());
  *
  * @returns A random weighted last name from Finnish open data
  */
-export function lastName(): string {
+export function randomLastName(): string {
   return lastNameGenerator();
 }
 
@@ -20,7 +20,7 @@ export function lastName(): string {
  * @param options
  * @returns a random weighted first name from Finnish open data
  */
-export function firstname(options: FirstNameOptions): string {
+export function randomFirstName(options: FirstNameOptions): string {
   const finalOptions = {
     ...options,
     firstNamesOnly: false,
