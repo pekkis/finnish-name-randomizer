@@ -11,12 +11,6 @@ importers:
       '@iv/alea':
         specifier: npm:@jsr/iv__alea@^1.1.0
         version: '@jsr/iv__alea@1.1.0'
-      esm-seedrandom:
-        specifier: ^3.0.5
-        version: 3.0.5
-      random-seed-weighted-chooser:
-        specifier: ^1.1.10
-        version: 1.1.10
     devDependencies:
       '@types/node':
         specifier: ^22.5.4
@@ -493,9 +487,6 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  esm-seedrandom@3.0.5:
-    resolution: {integrity: sha512-pMAq0mFIr5JQ3Ihbng7EBLMJ+llMbaDKkiG44pqbSXS0NIZWtEANpOpxb5s6Q8Q2R562P26qMHPv8YtP/NHh9g==}
-
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
 
@@ -583,9 +574,6 @@ packages:
     resolution: {integrity: sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==}
     engines: {node: ^10 || ^12 || >=14}
 
-  random-seed-weighted-chooser@1.1.10:
-    resolution: {integrity: sha512-lFQoKIvzxH4HAi9F3pQm0ijmey58pXXMNiec9qyMHDTgBeiynG17qZ+Zhn5DkyvhQnESIHrdjYiPCTlAiE6Zbw==}
-
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
@@ -593,9 +581,6 @@ packages:
     resolution: {integrity: sha512-e3TapAgYf9xjdLvKQCkQTnbTKd4a6jwlpQSJJFokHGaX2IVjoEqkIIhiQfqsi0cdwlOD+tQGuOd5AJkc5RngBw==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
-
-  seedrandom@3.0.5:
-    resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -1055,8 +1040,6 @@ snapshots:
       '@esbuild/win32-ia32': 0.23.1
       '@esbuild/win32-x64': 0.23.1
 
-  esm-seedrandom@3.0.5: {}
-
   estree-walker@3.0.3:
     dependencies:
       '@types/estree': 1.0.5
@@ -1132,10 +1115,6 @@ snapshots:
       picocolors: 1.1.0
       source-map-js: 1.2.0
 
-  random-seed-weighted-chooser@1.1.10:
-    dependencies:
-      seedrandom: 3.0.5
-
   resolve-pkg-maps@1.0.0: {}
 
   rollup@4.21.2:
@@ -1159,8 +1138,6 @@ snapshots:
       '@rollup/rollup-win32-ia32-msvc': 4.21.2
       '@rollup/rollup-win32-x64-msvc': 4.21.2
       fsevents: 2.3.3
-
-  seedrandom@3.0.5: {}
 
   shebang-command@2.0.0:
     dependencies:
