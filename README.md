@@ -10,8 +10,8 @@ fake Finnish person data for teaching SQL and databases. Results were as expecte
 
 ### Firstnames
 
-Firstnames are categorized, like in the source name, with a binary `sex` parameter,
-either `male` or `female`.
+Firstnames are categorized, exactly as in the source data, with a binary `sex` parameter,
+names are either `female` or `male`.
 
 Use `firstNamesOnly` to get a dataset considering only the FIRST first names.
 If you do not use this, you will get a lot more Kalevis and Tapanis than you
@@ -22,9 +22,15 @@ usually meet, since these are much more usual as second first names.
 import {randomFirstName} from 'jsr:@pekkis/finnish-name-randomizer'
 
 const result = randomFirstName({
-  sex: "male",
+  sex: "female",
   firstNamesOnly: true,
-});
+}); // Niina or some other nice female name
+
+const result = randomFirstName({
+  sex: "female",
+  firstNamesOnly: true,
+}); // should be Mikko, if the computer chose wisely!
+
 ```
 
 ### Lastnames
