@@ -35,10 +35,7 @@ There is no categorization or differentiated datasets. Very simple.
 
 import {randomLastName} from 'jsr:@pekkis/finnish-name-randomizer'
 
-const result = randomLastName({
-  sex: "male",
-  firstNamesOnly: true,
-});
+const result = randomLastName();
 ```
 
 ## Data source
