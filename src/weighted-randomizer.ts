@@ -1,4 +1,4 @@
-import Alea from "jsr:@iv/alea";
+import Alea from "jsr:@iv/alea@^1.1.0";
 
 /**
  * Contains static weighted chooser functions.
@@ -23,7 +23,7 @@ export default class Chooser {
   static chooseWeightedIndex = (
     weights: number[],
     seed: any = Math.random(),
-    defaultWeight = 1
+    defaultWeight = 1,
   ): number => {
     // If the array is falsy, not an array, or empty, return -1.
     if (!weights || !Array.isArray(weights) || weights.length <= 0) {
@@ -38,11 +38,11 @@ export default class Chooser {
     // For example, if the weights are [5, 30, 10], this would build an array
     // containing [5, 35, 45], and cumulative=45.
     const ranges: number[] = weights.map(
-      (weight) =>
-        (cumulative +=
-          typeof weight === "number" && weight >= 0
-            ? Math.abs(weight)
-            : defaultWeight)
+      (
+        weight,
+      ) => (cumulative += typeof weight === "number" && weight >= 0
+        ? Math.abs(weight)
+        : defaultWeight),
     );
 
     const alea = new Alea({
@@ -86,7 +86,7 @@ export default class Chooser {
     arrayOfObjects: any[],
     weightPropertyKey: any = "weight",
     defaultWeight = 1,
-    seed: any = Math.random()
+    seed: any = Math.random(),
   ): object | null => {
     // If the array is falsy, not an array, or empty, return null.
     if (
@@ -119,7 +119,7 @@ export default class Chooser {
     const chosenIndex: number = Chooser.chooseWeightedIndex(
       weights,
       seed,
-      defaultWeight
+      defaultWeight,
     );
 
     // If an index was chosen, return the object for that index.

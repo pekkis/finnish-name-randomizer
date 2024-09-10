@@ -1,5 +1,5 @@
 import {
-  FirstNameOptions,
+  type FirstNameOptions,
   getFirstnameDataset,
   getLastnameDataset,
 } from "./datasets.ts";
