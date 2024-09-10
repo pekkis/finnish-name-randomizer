@@ -8,6 +8,8 @@ import { createRandomNameGenerator } from "./name.ts";
 const lastNameGenerator = createRandomNameGenerator(getLastnameDataset());
 
 /**
+ * Generates a random first name from Finnish open data
+ *
  * @returns A random weighted last name from Finnish open data
  */
 export function randomLastName(): string {
@@ -15,6 +17,8 @@ export function randomLastName(): string {
 }
 
 /**
+ * Generates a random first name from Finnish open data
+ *
  * @param options
  * @returns a random weighted first name from Finnish open data
  */
