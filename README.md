@@ -6,10 +6,6 @@ on the actual commonness of the names based on the open data on the subject.
 I created the library for creation of realistic huge datasets of semi-realistic
 fake Finnish person data for teaching SQL and databases. Results were as expected!
 
-## Data source
-
-* https://www.avoindata.fi/data/fi/dataset/none
-
 ## Examples
 
 ### Firstnames
@@ -44,4 +40,12 @@ const result = randomLastName({
   firstNamesOnly: true,
 });
 ```
+
+## Data source
+
+The data source for the names is the Avoin Data by Digi- ja väestötietovirasto (DVV) published under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+The data has not been modified, at least not intentionally. I manually extracted CSV's out of the Excel files and JSON files out of the CSV's with code. The exact date of the dataset in this version of the randomizer library is `2024-08-05`. I plan to update this semi-monthly / annually and randomly publish new versions.
+
+* https://www.avoindata.fi/data/fi/dataset/none
 
