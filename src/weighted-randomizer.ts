@@ -1,4 +1,4 @@
-import Alea from "@iv/alea";
+import Alea from "jsr:@iv/alea";
 
 /**
  * Contains static weighted chooser functions.

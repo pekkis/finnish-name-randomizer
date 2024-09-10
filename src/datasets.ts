@@ -5,7 +5,7 @@ import womenAll from "./data/naiset-kaikki.json" with { type: "json" };
 import womenFirst from "./data/naiset-ens.json" with { type: "json" };
 
 import lastNames from "./data/sukunimet.json" with { type: "json" };
-import { NameData } from "./name";
+import type { NameData } from "./name.ts";
 
 export type FirstNameOptions = {
   sex: "male" | "female";

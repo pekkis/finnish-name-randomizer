@@ -1,4 +1,4 @@
-import Chooser from "./weighted-randomizer.js";
+import Chooser from "./weighted-randomizer.ts";
 
 export type NameData = {
   name: string;

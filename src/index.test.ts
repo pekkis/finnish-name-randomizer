@@ -1,27 +1,25 @@
-import { expect, describe, it } from "vitest";
-import { randomFirstName, randomLastName } from "./index";
+import { expect } from "jsr:@std/expect";
+import { randomFirstName, randomLastName } from "./index.ts";
 
-describe("name generator", () => {
-  it("returns a female first name", () => {
-    const result = randomFirstName({
-      sex: "female",
-      firstNamesOnly: true,
-    });
-
-    expect(result).toBeTypeOf("string");
+Deno.test("returns a female first name", () => {
+  const result = randomFirstName({
+    sex: "female",
+    firstNamesOnly: true,
   });
 
-  it("returns a male first name", () => {
-    const result = randomFirstName({
-      sex: "male",
-      firstNamesOnly: true,
-    });
+  expect(typeof result).toBe("string");
+});
 
-    expect(result).toBeTypeOf("string");
+Deno.test("returns a male first name", () => {
+  const result = randomFirstName({
+    sex: "male",
+    firstNamesOnly: true,
   });
 
-  it("returns a last name", () => {
-    const result = randomLastName();
-    expect(result).toBeTypeOf("string");
-  });
+  expect(typeof result).toBe("string");
+});
+
+Deno.test("returns a last name", () => {
+  const result = randomLastName();
+  expect(typeof result).toBe("string");
 });

@@ -2,13 +2,12 @@ import {
   FirstNameOptions,
   getFirstnameDataset,
   getLastnameDataset,
-} from "./datasets";
-import { createRandomNameGenerator } from "./name";
+} from "./datasets.ts";
+import { createRandomNameGenerator } from "./name.ts";
 
 const lastNameGenerator = createRandomNameGenerator(getLastnameDataset());
 
 /**
- *
  * @returns A random weighted last name from Finnish open data
  */
 export function randomLastName(): string {
@@ -16,7 +15,6 @@ export function randomLastName(): string {
 }
 
 /**
- *
  * @param options
  * @returns a random weighted first name from Finnish open data
  */

@@ -1,12 +1,11 @@
-import { parse } from "csv-parse/sync";
+import { parse } from "npm:csv-parse/sync";
 import fs from "node:fs/promises";
 
-import NumberParser from "intl-number-parser";
+import NumberParser from "npm:intl-number-parser";
 
 console.log(NumberParser);
 
-// @ts-expect-error
-const parser = NumberParser.default("en-US");
+const parser = NumberParser("en-US");
 
 const firstnameFiles = [
   "miehet-ens",
@@ -67,7 +66,7 @@ const lastnames = await parseLastnameFile();
 
 await fs.writeFile(
   `./src/data/sukunimet.json`,
-  JSON.stringify(lastnames, null, 2)
+  JSON.stringify(lastnames, null, 2),
 );
 
 console.log("Parsing first names");
@@ -81,6 +80,6 @@ for (const filename of firstnameFiles) {
 
   await fs.writeFile(
     `./src/data/${filename}.json`,
-    JSON.stringify(parsed, null, 2)
+    JSON.stringify(parsed, null, 2),
   );
 }
