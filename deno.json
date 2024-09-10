@@ -1,6 +1,6 @@
 {
   "name": "@pekkis/finnish-name-randomizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "exports": "./src/index.ts",
 
   "tasks": {

@@ -19,7 +19,7 @@ export function randomLastName(): string {
 /**
  * Generates a random first name from Finnish open data
  *
- * @param options
+ * @param {FirstNameOptions} options Options for the first name generator
  * @returns a random weighted first name from Finnish open data
  */
 export function randomFirstName(options: FirstNameOptions): string {
